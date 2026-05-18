@@ -1,0 +1,385 @@
+/* CSS Boilerplate */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, 
+body {
+    height: 100%;
+    width: 100%;
+    background: white;
+    color: black;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    padding: 0 40px;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.logo {
+    width: 80px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-links .nav-link {
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    padding-top: 12px;
+}
+
+.auth-btn-container {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.auth-btn-container .btn {
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.auth-btn-container .login-btn {
+    background: black;
+    color: white;
+    font-size: 13px;
+    font-weight: 800;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 20px;
+}
+
+.hero-section {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding-block: 12px;
+}
+
+.hero-section .hero-content {
+    margin-top: 3vh;
+    font-size: 4.85vw;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.hero-section p {
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    text-align: center;
+    font-weight: 100;
+    margin-top: 24px;
+    line-height: 1.6;
+}
+
+.hero-section .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50vw;
+    padding: 16px 16px;
+    background: #F3F3F6;
+    border-radius: 30px;
+}
+
+.search-container .search-placeholder {
+    color: #9CA3AF;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.hero-section .search-container .icons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.search-container .icons .filter {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.search-container .search-icon i {
+    font-size: 18px;
+    padding: 12px;
+    background: #EC5E95;
+    border-radius: 50%;
+    color: white;
+}
+
+.trending-search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 12px;
+}
+
+.trending-search-container .trending-search {
+    font-size: 13px;
+    letter-spacing: 0.4px;
+    font-weight: 400;
+    color: #9CA3AF;
+}
+
+.trending-search-container .category-container ul {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    list-style-type: none;
+}
+
+.trending-search-container .category-container ul li {
+    padding: 8px 12px;
+    font-size: 13px;
+    letter-spacing: 0.4px;
+    font-weight: 200;
+    background: #F3F3F6;
+    border-radius: 16px;
+}
+
+.design-section {
+    height: auto;
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    justify-content: center;
+}
+
+.design-section .design-category-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.design-section .design-category-container .popular-options {
+    border: 1px solid #9CA3AF;
+    padding: 7px 10px;
+    border-radius: 10px;
+    font-size: 13px;
+    letter-spacing: 0.75px;
+    font-weight: 100;
+}
+
+.design-section .design-category-container .popular-options i {
+    padding-left: 8px;
+}
+
+.design-section .design-category-container .filter-options {
+    padding: 8px 16px;
+    border: 1px solid #9CA3AF;
+    border-radius: 16px;
+    font-size: 12px;
+    letter-spacing: 0.75;
+    font-weight: 100;
+}
+
+.design-section .design-category-container .filter-options i {
+    padding-right: 5px;
+    font-size: 14px;
+}
+
+.design-section .design-category-container .design-category {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.design-section .design-category-container .design-category span {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.design-section .design-category-container .design-category .active {
+    padding: 8px 12px;
+    background: #F3F3F6;
+    border-radius: 16px;
+}
+
+.design-section .design-card-container {
+    height: auto;
+    width: 100%;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 24px;
+}
+
+.design-section .design-card-container .design-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.design-section .design-card-container .design-card .card {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.design-section .design-card-container .design-card .card img,
+.design-section .design-card-container .design-card .card video
+ {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+.design-section .design-card-container .design-card .card .card-feature {
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 60%);
+    height: 40%;
+    width: 100%;
+    background: linear-gradient(to bottom, 
+        transparent 10%,
+        rgba(0, 0, 0, 0.15) 30%, 
+        rgba(0, 0, 0, 0.75) 60%
+    );
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.design-section .design-card-container .design-card .card:hover 
+.card-feature {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+}
+
+.design-section .design-card-container .design-card .card .card-feature h4 {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: white;
+    white-space: nowrap;
+}
+
+.design-section .design-card-container .design-card .card .card-feature i {
+    color: black;
+    background: white;
+    padding: 12px;
+    border-radius: 50%;
+}
+
+.design-section .design-card-container .design-card .brand-details {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+}
+
+.design-section .design-card-container .design-card .brand-details .brand-detail,
+.design-section .design-card-container .design-card .brand-details .engagement-detail {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.design-section .design-card-container .design-card .brand-details .brand-detail img {
+    height: 25px;
+    width: 25px;
+    border: none;
+    border-radius: 50%;
+}
+
+.design-section .design-card-container .design-card .brand-details .brand-detail .brand-name {
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.design-section .design-card-container .design-card .brand-details .brand-detail .brand-tag {
+    background: #A1A1AA;;
+    color: white;
+    padding: 1px 3px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.design-section .design-card-container .design-card .brand-details .engagement-detail .likes i,
+.design-section .design-card-container .design-card .brand-details .engagement-detail .views i {
+    font-size: 12px;
+    color: #A1A1AA;
+}
+
+.design-section .design-card-container .design-card .brand-details .engagement-detail .likes,
+.design-section .design-card-container .design-card .brand-details .engagement-detail .views {
+    font-size: 12px;
+}
+
+.design-section .signup-option-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.design-section .signup-option-container .signup-option {
+    font-size: 14px;
+    color: white;
+    background: black;
+    border: none;
+    border-radius: 20px;
+    padding: 6px 12px;
+}
+
+.design-section .signup-option-container .up-arrow i {
+    font-size: 20px;
+    padding: 12px;
+    background: #A1A1AA;
+    border-radius: 50%;
+    color: white;
+}
